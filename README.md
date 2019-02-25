@@ -24,3 +24,6 @@ Download Font-Awesome !
 wget https://github.com/FortAwesome/Font-Awesome/releases/download/5.7.2/fontawesome-free-5.7.2-desktop.zip
 ```
 Copy the `.ttf` or the `.otfs` to `~/.fonts`.
+```
+wget https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip
+```
