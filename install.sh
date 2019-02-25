@@ -28,3 +28,6 @@ sudo apt-get install compton
 
 # i3locks
 sudo apt-get install i3blocks
+
+# i3blocks volume
+sudo apt-get install pavucontrol

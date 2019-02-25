@@ -27,3 +27,6 @@ Copy the `.ttf` or the `.otfs` to `~/.fonts`.
 ```
 wget https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip
 ```
+# i3bars
+## Volume
+Install pavucontrol (pulse audio control). Run the volume script passing 5 and pulse as parameters.
