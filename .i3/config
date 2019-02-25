@@ -180,15 +180,14 @@ bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
 bar {
         status_command i3blocks -c ~/.i3/i3blocks.conf
-        font pango:System San Francisco Display 9 
+        font pango:System San Francisco Display 18
         colors{
-
-                background         $bg-color
+            background         $bg-color
 	    	separator          #757575
-		#                  border             background         text
-		focused_workspace  $bg-color          $bg-color          $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-                urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+            #                  border             background         text
+            focused_workspace  $bg-color          $bg-color          $text-color
+            inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+            urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
         }
 }
 
