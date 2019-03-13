@@ -1,3 +1,6 @@
+# Xresources
+To reload ...
+```xrdb ~/.Xresources```
 # Inputs ...
 To list devices:
 ```

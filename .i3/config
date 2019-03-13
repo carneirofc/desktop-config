@@ -142,11 +142,6 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
         bindsym j resize shrink width 1 px or 1 ppt
         bindsym k resize grow height 1 px or 1 ppt
         bindsym l resize shrink height 1 px or 1 ppt
@@ -180,7 +175,7 @@ bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
 bar {
         status_command i3blocks -c ~/.i3/i3blocks.conf
-        font pango:System San Francisco Display 18
+        font pango:System San Francisco Display 9
         colors{
             background         $bg-color
 	    	separator          #757575
@@ -213,8 +208,11 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 #bindsym XF86AudioNext exec playerctl next
 #bindsym XF86AudioPrev exec playerctl previous
 
+# Refresh Xresources
+bindsym $mod+x exec xrdb ~/.Xresources
+
 exec_always feh --bg-scale /home/carneirofc/Pictures/wallpaper.jpg
-exec compton -f 5
+exec compton 
 
 # Freeze monitor config 
 exec xrandr --output eDP-1-1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --off --output HDMI-1-2 --off
