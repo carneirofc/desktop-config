@@ -30,6 +30,16 @@ Copy the `.ttf` or the `.otfs` to `~/.fonts`.
 ```
 wget https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip
 ```
+## Audio
+```
+git clone https://github.com/haikarainen/light ~/.light
+cd ~/.ligth
+./autogen.sh
+./configure && make
+sudo make install
+```
 # i3bars
 ## Volume
 Install pavucontrol (pulse audio control). Run the volume script passing 5 and pulse as parameters.
+
+
